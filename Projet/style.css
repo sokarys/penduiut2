@@ -1,0 +1,49 @@
+.key_on{
+	 color:red;
+}
+
+.key_on:hover {
+	background-color : red!important;
+	color : white!important;	
+}
+
+.key_off{
+	color : blue;
+}
+
+.key_on:hover {
+	background-color : red!important;
+	color : white!important;	
+}
+
+#reponse {
+	display : none;
+}
+#keybord {
+	text-align : center;
+	margin-left : auto;
+	margin-right: auto;
+	padding-top: 50px;
+	margin-top: 50px;
+}
+
+body{
+	text-align:center;
+}
+
+#motfr{
+	padding-top: 50px;
+	margin-top: 50px;
+}
+
+#moten{
+	padding-top: 50px;
+	margin-top: 50px;
+}
+
+#imgPendu{
+	float : right;
+}
+
+#newgame{
+}
