@@ -1,6 +1,6 @@
 <?php
 
-$urlServer='http://webu2.upmf-grenoble.fr/shs/jb/hangman/jeu.php';
+$urlServer='http://webu2.upmf-grenoble.fr/shs/jb/hangman/db.php';
 
 $act = "?";
 
