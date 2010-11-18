@@ -13,8 +13,8 @@
     </head>
     <body>
         <?php
-            require_once 'header.inc.hp';
-            require_once 'menu.inc.hp';
+            require_once 'header.inc.php';
+            require_once 'menu.inc.php';
             require_once 'game.inc.php';
             require_once 'footer.inc.php';
         ?>
