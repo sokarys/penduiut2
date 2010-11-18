@@ -32,7 +32,7 @@ function getFormatText(str){
 	var i = 0;
 	var sr = "";
 	for(i=0; i<nblettre ; i++){
-		sr += "\<span class=\"lettre\"\>" +str[i] + "\</span\>\n";
+		sr += "<span class=\"lettre\">" +str[i] + "</span>\n";
 	}
 
 	return sr;
@@ -48,9 +48,11 @@ function reponse(msg){
 	$('#reponse').text(msg);
 	$('#motfr').html(getFormatText($('#reponse').html().split("#")[3]));
 	$('#moten').html(getFormatText($('#reponse').html().split("#")[4]));
-	updateStyle();
-	addError();
-	if(!win()){ loose(); }
+	//updateStyle();
+	if(!(win()==true)){
+            addError();
+            loose();
+        }
 }
 
 function addError(){
