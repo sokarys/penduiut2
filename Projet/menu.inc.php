@@ -2,7 +2,7 @@
     <ul>
         <?php # Mise en place du menu par un parcours de la table associative
             $menu['Accueil']="index.php";
-            $menu['Le jeu']="jeu.php";
+            $menu['Le jeu']="jeu.html";
             $menu['Personnaliser']="";
             $menu['Documentation']="";
 
