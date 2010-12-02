@@ -4,28 +4,18 @@ $urlServer='http://webu2.upmf-grenoble.fr/shs/jb/hangman/db.php';
 
 $act = "?";
 
-if(isset($_GET['session'])){
-	$session = $_GET['session'];
-	$urlServer.=$act."session=".$session;
+
+if(isset($_GET['word'])){
+	$word = @$_GET['word'];
+	$urlServer.=$act."word=".$word;
 	$act = "&";
 }
-if(isset($_GET['action'])){
-	$action = $_GET['action'];
-	$urlServer.=$act."action=".$action;
+if(isset($_GET['mot'])){
+	$mot = @$_GET['mot'];
+	$urlServer.=$act."mot=".$mot;
 	$act = "&";
 }
 
-if(isset($_GET['lettre'])){
-	$lettre = $_GET['lettre'];
-	$urlServer.=$act."lettre=".$lettre;
-	$act = "&";
-}
-
-if(isset($_GET['cheat'])){
-	$cheat = $_GET['cheat'];
-	$urlServer.=$act."cheat=".$cheat;
-	$act = "&";
-}
 
 $handle = fopen($urlServer, "r");
 
