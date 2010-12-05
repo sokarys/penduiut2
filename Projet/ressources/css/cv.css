@@ -1,0 +1,40 @@
+body{
+    background-color:#FFE2AA;
+    background-image:url('./../images/interface/background.png');
+    background-attachment:fixed;
+    background-position:bottom;
+    background-repeat:repeat-x;
+}
+
+#photo{
+    float:right;
+    margin:20px;
+    width:96px;
+    height:128px;
+    border:1px solid;
+}
+
+#corpscv{
+    padding:20px;
+    font-family: "Comic Sans MS", cursive;
+    font-size: 15px;
+	
+}
+
+#corpscv p{
+    margin-left:60px;
+}
+
+#corpscv ul{
+    list-style-type: disc;
+    list-style-image: url(./../images/interface/puce.png);
+    list-style-position: inside;
+}
+
+#titrecv{
+    font-family: "Comic Sans MS", cursive;;
+    margin-top:20px;
+    margin-right:110px;
+    margin-bottom:60px;
+    text-align:center;
+}

@@ -19,11 +19,11 @@ if(isset($_GET['mot'])){
 
 $handle = fopen($urlServer, "r");
 
-if (!$handle) 
+if (!$handle)
 {
 	print "erreur<hr>";
 	exit;
-} 
+}
 else
 {
 	fpassthru($handle);

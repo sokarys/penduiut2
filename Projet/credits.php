@@ -11,13 +11,12 @@
         <meta name="description" content="Un simple jeu de pendu" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
         <link rel="stylesheet" href="ressources/css/style.css" />
-        <link rel="stylesheet" href="lib/css/ui-lightness/jquery-ui-1.8.6.custom.css" />
     </head>
     <body>
         <?php
             require_once 'parts/header.inc.php';
             require_once 'parts/menu.inc.php';
-            require_once 'parts/accueil.inc.php';
+            require_once 'parts/credits.inc.php';
             require_once 'parts/footer.inc.php';
         ?>
     </body>

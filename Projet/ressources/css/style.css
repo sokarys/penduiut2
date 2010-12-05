@@ -1,0 +1,259 @@
+.key_on{
+     color:red;
+}
+
+.key_on:hover {
+    background-color : red!important;
+    color : white!important;
+}
+
+.key_off{
+    color : blue;
+}
+
+.key_on:hover {
+    background-color : red!important;
+    color : white!important;
+}
+
+#reponse {
+    display : none;
+}
+
+#keybord {
+    padding-top:20px;
+    padding-bottom:20px;
+    margin-top:80px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+#keybord table{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+body{
+    background-color:#FFE2AA;
+    background-image:url('./../images/interface/background.png');
+    background-attachment:fixed;
+    background-position:bottom;
+    background-repeat:repeat-x;
+    margin-top :0px;
+    margin-left:0px;
+    margin-right:0px;
+    height: 100%;
+    border:0px dotted;
+}
+
+#header{
+    font-family: "Comic Sans MS", cursive;
+    font-weight:bold;
+    padding-top:15px;
+    height:90px;
+    text-align: center;
+}
+
+h1{
+    margin-top:5px;
+}
+
+h5{
+    margin-top:-20px;
+}
+#footer{
+    height:40px;
+    width:100%;
+    border-top:3px solid;
+    border-color:#3364CC;
+    background-color:#000000;
+    position: fixed !important;
+    position: absolute;
+    bottom:0px;
+}
+
+#footer-font{
+    font-size: 11px;
+    color:#FFFFFF;
+    padding-left:20px;
+}
+
+#footer-font a{
+    color:#FFFFFF;
+    text-decoration:underline;
+}
+
+#footer-font a:hover{
+    color:#FFC200;
+    text-decoration:underline;
+}
+
+#footer-validator{
+    padding-right:20px;
+    margin-top:-30px!important;
+    float:right;
+}
+
+#footer-validator img{
+    border:none;
+}
+
+#conteneurJeu{
+    margin-top:auto;
+    margin-bottom:50px;
+}
+
+#credits, #rules, #accueil, #perso, #doc{
+    font-family: "Comic Sans MS", cursive;
+    margin-left:400px;
+    padding-left:20px;
+    text-align:left;
+    margin-bottom:50px;
+}
+
+#credits p, #rules p, #perso p{
+    margin-left:40px;
+}
+
+#carte{
+    border:1px solid;
+    margin:20px;
+    width:400px;
+    height:291px;
+    background-image:url('./../images/interface/coyote7.png');
+    background-position:top;
+    background-repeat:no-repeat;
+}
+
+#contenuCarte{
+    margin-left:130px;
+    margin-top:100px;
+}
+
+#contenuCarte p{
+    margin-left:100px!important;
+}
+
+.liste{
+    list-style-type: square;
+    list-style-position: inside;
+}
+
+.liste a{
+    color:#000000;
+    text-decoration:underline;
+}
+
+.liste a:hover{
+    color:#3364CC;
+    text-decoration:none;
+}
+
+#intro{
+    margin-left:0px!important;
+}
+
+#conteneurMotFr, #conteneurMotEn{
+    padding-bottom:20px;
+    margin-top: 20px;
+    width:50%;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+#motfr, #moten{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+#result{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    font-weight:bold;
+    width:300px;
+    height:60px;
+    margin-top:10px;
+    text-align:center;
+}
+
+#pendu{
+    float : right;
+    margin-right:60px;
+    margin-top:21px;
+    width:300px;
+    height:219px;
+}
+
+#imgPendu{
+    border:1px solid;
+    width:300px;
+    height:219px;
+}
+
+#newgame{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    font-weight:bold;
+    border:none;
+    width:300px;
+    height:60px;
+    margin-bottom:-10px;
+    text-align:center;
+}
+
+#newgame a{
+    border:none;
+    color:#000000;
+    text-decoration:none;
+}
+
+#newgame a:hover{
+    color:#3364CC;
+    text-decoration:none;
+}
+
+#conteneurMenu{
+    float:left;
+    position: fixed !important;
+    text-align: left;
+    padding: 20px 30px 20px 0px;
+    width:370px;
+    height:360px;
+    background-image:url('./../images/interface/coyote1.png');
+    background-position:top;
+    background-repeat:no-repeat;
+}
+
+#menu{
+    font-family: "Comic Sans MS", cursive;
+    font-size: 18px;
+    font-weight:bold;
+    border:none;
+    margin-left:130px;
+    margin-top:165px;
+}
+
+#menu ul {
+    list-style: none;
+    
+}
+
+#menu ul li:before {
+    content: "\00BB \0020";
+}
+
+#menu a{
+    color:#000000;
+    text-decoration:none;  
+}
+
+#menu a:hover{
+    color:#6D4800;
+    margin-left:20px;
+}
