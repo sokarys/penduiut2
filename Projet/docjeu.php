@@ -10,7 +10,8 @@
         <title>TnT - Coyote believes he can fly</title>
         <meta name="description" content="Un simple jeu de pendu" />
         <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
-        <link rel="stylesheet" href="ressources/css/style.css" />
+        <link rel="stylesheet" href="ressources/css/style.css" media="screen" />
+        <link rel="stylesheet" href="ressources/css/print.css" media="print" />
     </head>
     <body>
         <?php
