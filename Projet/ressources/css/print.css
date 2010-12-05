@@ -1,0 +1,81 @@
+/************************
+* BODY, HEADER, FOOTER
+************************/
+
+body{
+    background-color:#FFFFFF;
+    margin-top :0px;
+    margin-left:0px;
+    margin-right:0px;
+    height: 100%;
+    width:50%;
+}
+
+#header{
+    font-family: "Comic Sans MS", cursive;
+    font-weight:bold;
+    padding-top:15px;
+    height:90px;
+    text-align: center;
+}
+
+#footer{
+    display: none;
+}
+
+h1{
+    margin-top:5px;
+}
+
+h5{
+    margin-top:-20px;
+}
+
+/************************
+* CONTENU
+************************/
+
+#conteneurMenu{
+    display: none;
+}
+
+#rules, #doc{
+    font-family: "Comic Sans MS", cursive;
+    margin-left:20px;
+    padding-left:20px;
+    text-align:left;
+    margin-bottom:50px;
+}
+
+#rules p, #doc p{
+    margin-left:40px;
+}
+
+#intro{
+    margin-left:0px!important;
+}
+
+/************************
+* LISTES
+************************/
+
+.liste{
+    list-style-type:square;
+    list-style-position:outside;
+}
+
+.liste a{
+    color:#000000;
+    text-decoration:underline;
+}
+
+.liste a:hover{
+    color:#3364CC;
+    text-decoration:none;
+}
+
+.listeIndentee{
+    list-style-type: square;
+    list-style-position:outside;
+    margin-left:40px;
+}
