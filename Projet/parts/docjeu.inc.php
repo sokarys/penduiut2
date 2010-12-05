@@ -1,7 +1,7 @@
 <div id="doc">
     <h2>Documentation du jeu</h2>
     <p>Le jeu utilise deux librairies javascript pour fonctionner :</p>
-    <ul class="liste">
+    <ul class="listeIndentee">
         <li>jquery-1.4.2.min.js</li>
         <li>jquery-ui-1.8.6.custom.min.js</li>
     </ul>
@@ -11,7 +11,7 @@
     <h4>Le fonctionnement du jeu :</h4>
     <p>Il est séparé en deux : une page game.php, pour l'interface graphique et pendu.js qui permet de définir des fonctions pour que la jeu prenne vie.<br/>
     Dans game.php, nous pouvons retrouver plusieurs div :</p>
-    <ul class="liste">
+    <ul class="listeIndentee">
         <li>result permet de mettre le résultat de la partie (gagné ou perdu) ainsi que d'afficher le nombre de "vies" qu'il reste au joueur./li>
         <li>réponse stocke la réponse du serveur pour la traiter par la suite.</li>
         <li>motfr contient le mot fr.</li>
