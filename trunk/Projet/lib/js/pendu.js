@@ -16,6 +16,7 @@ $(function(){
 
 function newGame(){
 	erreur = -1;
+        $('#newgame').html('<p><a id="newgame" href=\"javascript:newGame();\">Nouvelle Partie</a></p>');
 	$('#keybord span').removeClass("key_off").addClass("key_on");
 	$('#result').html("");
 	$.ajax({
@@ -59,7 +60,8 @@ function addError(){
 	var t = $('#reponse').html().split("#")[0];
 	if($('#motfr').html().indexOf(t) < 0 && $('#moten').html().indexOf(t) < 0){
 		erreur = erreur + 1;
-		$('#imgPendu').attr({ src: erreur+".jpg", alt: erreur+".jpg" });
+		$('#imgPendu').attr({ src: "ressources/images/scenario/"+erreur+".jpg", alt: erreur+".jpg" });
+                $('#result').html("<p>Erreurs encore possibles : "+ (7 - erreur) +"</p>");
 	}
 }
 
@@ -73,7 +75,9 @@ function requete(session, lettre){
 
 function win(){
 	if($('#motfr').html().indexOf("_") < 0 && $('#moten').html().indexOf("_") < 0 ){
-		$('#result').html('You WIN!!<br /><a id="newgame" href=\"javascript:newGame();\">Nouvelle Partie</a>');
+                $('#result').html('');
+                $('<img />').attr('src', 'ressources/images/interface/win.png').load(function(){ $('#result').append( $(this) ); });
+                $('#imgPendu').attr({ src: "ressources/images/scenario/9.jpg", alt: "9.jpg" });
 		$('#keybord span').removeClass("key_on").addClass("key_off");
 		return true;
 	}
@@ -81,8 +85,9 @@ function win(){
 }
 
 function loose(){
-	if(erreur == 10){
-		$('#result').html('You FAIIILLL!<br /><a id="newgame" href=\"javascript:newGame();\">Nouvelle Partie</a>');
+	if(erreur == 8){
+                $('#result').html('');
+                $('<img />').attr('src', 'ressources/images/interface/loose.png').load(function(){ $('#result').append( $(this) ); });
 		openResult();
 		$('#keybord span').removeClass("key_on").addClass("key_off");
 	}

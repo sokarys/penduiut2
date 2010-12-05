@@ -1,37 +1,23 @@
-<div>
-<p>
-    La partie "personnalisation" permet &agrave; l'utilisateur d'ajouter<br/>
-des mots dans la base de donn&eacute;es, pour que l'ajout soit valid&eacute;<br/>
-l'utilisateur doit obligatoirement ajouter un mot en fran&ccedil;ais<br/>
-suivi de sa traduction en anglais.
-</p>
-<p>
-    La programmation de cette fonctionnalit&eacute; d'ajout de mot est r&eacute;alis&eacute;e en Ajax &agrave; l'aide<br/>
-de la librairie JQuery.
-</p>
-
-<p>Fonctionnement:</p>
-
-<ul>
-    <li>L'utilisateur saisi les deux mots qu'il veut ajouter puis valide.<br/>
-        Un test est effectu&eacute; en JavaScript afin de v&eacute;rifier que les champs<br/>
-        ont bien &eacute;taient renseign&eacute;s. On r&eacute;cup&egrave;re les valeurs gr&acirc;ce au DOM<br/>
-        (document.getElementById("fr").value)<br/><br/>
-    </li>
-    <li>Ensuite une requ&ecirc;te Ajax est envoy&eacute; au serveur, on passe par un proxy,<br/>
-        pour que l'appel soit possible sur une autre URL<br/>
-        On envoi comme donn&eacute;es les param&egrave;tres mot et word<br/><br/>
-    </li>
-    <li>Au niveau du proxy les param&egrave;tres son ajout&eacute; &agrave; l'url qui permet l'ajout en base<br/>
-        (http://webu2.upmf-grenoble.fr/shs/jb/hangman/db.php?word=test&amp;mot=test)<br/><br/>
-    </li>
-    <li>
-        La requ&ecirc;te Ajax ayant retourn&eacute; un r&eacute;sultat (0 ou 1), on traite le r&eacute;sultat<br/>
-        de l'appel xmlHTTP est l'analysons gr&acirc;ce &agrave; une fonction JavaScript qui affiche<br/>
-        "OK" lorsque que l'ajout c'est r&eacute;alis&eacute; avec succ&egrave;s et "KO" dans le cas contraire<br/>
-        Pour finir, l'utilisateur est inform&eacute; que l'ajout c'est r&eacute;alis&eacute; avec succ&egrave;s.<br/><br/>
-    </li>
-</ul>
-
-
-</div>
+<? echo '<?xml version="1.0" encoding="UTF-8"?>'; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html version="-//W3C//DTD XHTML 1.1//EN"
+      xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.w3.org/1999/xhtml
+                          http://www.w3.org/MarkUp/SCHEMA/xhtml11.xsd">
+    <head>
+        <title>TnT - Coyote believes he can fly</title>
+        <meta name="description" content="Un simple jeu de pendu" />
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        <link rel="stylesheet" href="ressources/css/style.css" />
+    </head>
+    <body>
+        <?php
+            require_once 'parts/header.inc.php';
+            require_once 'parts/menu.inc.php';
+            require_once 'parts/docperso.inc.php';
+            require_once 'parts/footer.inc.php';
+        ?>
+    </body>
+</html>

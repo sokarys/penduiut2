@@ -17,7 +17,7 @@
         <?php
             require_once 'parts/header.inc.php';
             require_once 'parts/menu.inc.php';
-            require_once 'parts/accueil.inc.php';
+            require_once 'parts/rules.inc.php';
             require_once 'parts/footer.inc.php';
         ?>
     </body>
